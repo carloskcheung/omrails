@@ -1,0 +1,34 @@
+/* you can change the font to Oxygen*/
+/*
+$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+*/
+
+/* Chnaged button color */
+$btnPrimaryBackground: green;
+/* Changes Navbar's background colors */
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+/* changes the Navbar's natural shadow */
+.navbar-inner{
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+
+.footer{
+	margin-top: 50px;
+	color: $grayLight;
+	a{
+		color: $gray;
+	}
+}
